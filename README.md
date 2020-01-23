@@ -1,5 +1,27 @@
 # graphql-ruby
 
+## New
+
+
+```graphql
+mutation {
+  updateMultiUsers(updateMultiUserInput: {
+    createUserNewInput: {
+      name: "test222"
+      email: "test222"
+      password: "test"
+    }
+    updateUserNewInput: {
+      id: 1
+      name: "lololololol123"
+    }
+    deleteUserNewInput: {
+      id: 7
+    }
+  })
+}
+```
+
 ## Installation
 
 Install dependencies:
@@ -125,4 +147,3 @@ mutation {
   }
 }
 ```
-
